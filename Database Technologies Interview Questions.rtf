@@ -1,0 +1,524 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset0 Open Sans;}{\f2\fnil\fcharset0 Arial;}{\f3\fnil Arial;}{\f4\fnil\fcharset0 Times New Roman;}{\f5\fnil Calibri;}}
+{\colortbl ;\red74\green74\blue74;\red255\green255\blue255;\red40\green40\blue41;\red0\green255\blue255;\red0\green141\blue217;\red0\green0\blue0;\red233\green251\blue229;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 Database Technologies Interview Questions \par
+______________SQL Queries based on following tables_____________\par
+
+\pard\sa100\sl240\slmult1\cf1\b\f1\fs27 EmployeeInfo Table:\b0\par
+\trowd\trgaph44\trrh1\trpaddl44\trpaddr44\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat5\cellx1171\clvertalc\clcbpat5\cellx2523\clvertalc\clcbpat5\cellx3881\clvertalc\clcbpat5\cellx5249\clvertalc\clcbpat5\cellx6414\clvertalc\clcbpat5\cellx8237\clvertalc\clcbpat5\cellx9545\clvertalc\clcbpat5\cellx10721 
+\pard\intbl\sa100\sl240\slmult1\qc\cf2\b\fs24 EmpID\cf0\b0\f0\fs22\cell\cf2\b\f1\fs24 EmpFname\cf0\b0\f0\fs22\cell\cf2\b\f1\fs24 EmpLname\cf0\b0\f0\fs22\cell\cf2\b\f1\fs24 Department\cf0\b0\f0\fs22\cell\cf2\b\f1\fs24 Project\cf0\b0\f0\fs22\cell\cf2\b\f1\fs24 Address\cf0\b0\f0\fs22\cell\cf2\b\f1\fs24 DOB\cf0\b0\f0\fs22\cell\cf2\b\f1\fs24 Gender\cf0\b0\f0\fs22\cell\row\trowd\trgaph44\trrh1\trpaddl44\trpaddr44\trpaddfl3\trpaddfr3
+\clvertalc\clcfpat6\clcbpat2\cellx1171\clvertalc\clcfpat6\clcbpat2\cellx2523\clvertalc\clcfpat6\clcbpat2\cellx3881\clvertalc\clcfpat6\clcbpat2\cellx5249\clvertalc\clcfpat6\clcbpat2\cellx6414\clvertalc\clcfpat6\clcbpat2\cellx8237\clvertalc\clcfpat6\clcbpat2\cellx9545\clvertalc\clcfpat6\clcbpat2\cellx10721 
+\pard\intbl\sa100\sl240\slmult1\qc\cf1\f1\fs24 1\cf0\f0\fs22\cell\cf1\f1\fs24 Sanjay\cf0\f0\fs22\cell\cf1\f1\fs24 Mehra\cf0\f0\fs22\cell\cf1\f1\fs24 HR\cf0\f0\fs22\cell\cf1\f1\fs24 P1\cf0\f0\fs22\cell\cf1\f1\fs24 Hyderabad(HYD)\cf0\f0\fs22\cell\cf1\f1\fs24 01/12/1976\cf0\f0\fs22\cell\cf1\f1\fs24 M\cf0\f0\fs22\cell\row\trowd\trgaph44\trrh1\trpaddl44\trpaddr44\trpaddfl3\trpaddfr3
+\clvertalc\clcfpat6\clcbpat2\cellx1171\clvertalc\clcfpat6\clcbpat2\cellx2523\clvertalc\clcfpat6\clcbpat2\cellx3881\clvertalc\clcfpat6\clcbpat2\cellx5249\clvertalc\clcfpat6\clcbpat2\cellx6414\clvertalc\clcfpat6\clcbpat2\cellx8237\clvertalc\clcfpat6\clcbpat2\cellx9545\clvertalc\clcfpat6\clcbpat2\cellx10721 
+\pard\intbl\sa100\sl240\slmult1\qc\cf1\f1\fs24 2\cf0\f0\fs22\cell\cf1\f1\fs24 Ananya\cf0\f0\fs22\cell\cf1\f1\fs24 Mishra\cf0\f0\fs22\cell\cf1\f1\fs24 Admin\cf0\f0\fs22\cell\cf1\f1\fs24 P2\cf0\f0\fs22\cell\cf1\f1\fs24 Delhi(DEL)\cf0\f0\fs22\cell\cf1\f1\fs24 02/05/1968\cf0\f0\fs22\cell\cf1\f1\fs24 F\cf0\f0\fs22\cell\row\trowd\trgaph44\trrh1\trpaddl44\trpaddr44\trpaddfl3\trpaddfr3
+\clvertalc\clcfpat6\clcbpat2\cellx1171\clvertalc\clcfpat6\clcbpat2\cellx2523\clvertalc\clcfpat6\clcbpat2\cellx3881\clvertalc\clcfpat6\clcbpat2\cellx5249\clvertalc\clcfpat6\clcbpat2\cellx6414\clvertalc\clcfpat6\clcbpat2\cellx8237\clvertalc\clcfpat6\clcbpat2\cellx9545\clvertalc\clcfpat6\clcbpat2\cellx10721 
+\pard\intbl\sa100\sl240\slmult1\qc\cf1\f1\fs24 3\cf0\f0\fs22\cell\cf1\f1\fs24 Rohan\cf0\f0\fs22\cell\cf1\f1\fs24 Diwan\cf0\f0\fs22\cell\cf1\f1\fs24 Account\cf0\f0\fs22\cell\cf1\f1\fs24 P3\cf0\f0\fs22\cell\cf1\f1\fs24 Mumbai(BOM)\cf0\f0\fs22\cell\cf1\f1\fs24 01/01/1980\cf0\f0\fs22\cell\cf1\f1\fs24 M\cf0\f0\fs22\cell\row\trowd\trgaph44\trrh1\trpaddl44\trpaddr44\trpaddfl3\trpaddfr3
+\clvertalc\clcfpat6\clcbpat2\cellx1171\clvertalc\clcfpat6\clcbpat2\cellx2523\clvertalc\clcfpat6\clcbpat2\cellx3881\clvertalc\clcfpat6\clcbpat2\cellx5249\clvertalc\clcfpat6\clcbpat2\cellx6414\clvertalc\clcfpat6\clcbpat2\cellx8237\clvertalc\clcfpat6\clcbpat2\cellx9545\clvertalc\clcfpat6\clcbpat2\cellx10721 
+\pard\intbl\sa100\sl240\slmult1\qc\cf1\f1\fs24 4\cf0\f0\fs22\cell\cf1\f1\fs24 Sonia\cf0\f0\fs22\cell\cf1\f1\fs24 Kulkarni\cf0\f0\fs22\cell\cf1\f1\fs24 HR\cf0\f0\fs22\cell\cf1\f1\fs24 P1\cf0\f0\fs22\cell\cf1\f1\fs24 Hyderabad(HYD)\cf0\f0\fs22\cell\cf1\f1\fs24 02/05/1992\cf0\f0\fs22\cell\cf1\f1\fs24 F\cf0\f0\fs22\cell\row\trowd\trgaph44\trrh1\trpaddl44\trpaddr44\trpaddfl3\trpaddfr3
+\clvertalc\clcfpat6\clcbpat2\cellx1171\clvertalc\clcfpat6\clcbpat2\cellx2523\clvertalc\clcfpat6\clcbpat2\cellx3881\clvertalc\clcfpat6\clcbpat2\cellx5249\clvertalc\clcfpat6\clcbpat2\cellx6414\clvertalc\clcfpat6\clcbpat2\cellx8237\clvertalc\clcfpat6\clcbpat2\cellx9545\clvertalc\clcfpat6\clcbpat2\cellx10721 
+\pard\intbl\sa100\sl240\slmult1\qc\cf1\f1\fs24 5\cf0\f0\fs22\cell\cf1\f1\fs24 Ankit\cf0\f0\fs22\cell\cf1\f1\fs24 Kapoor\cf0\f0\fs22\cell\cf1\f1\fs24 Admin\cf0\f0\fs22\cell\cf1\f1\fs24 P2\cf0\f0\fs22\cell\cf1\f1\fs24 Delhi(DEL)\cf0\f0\fs22\cell\cf1\f1\fs24 03/07/1994\cf0\f0\fs22\cell\cf1\f1\fs24 M\cf0\f0\fs22\cell\row 
+\pard\sa100\sl240\slmult1\cf1\b\f1\fs27\par
+EmployeePosition Table:\b0\par
+\trowd\trgaph44\trrh1\trpaddl44\trpaddr44\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat5\cellx2284\clvertalc\clcbpat5\cellx4883\clvertalc\clcbpat5\cellx7587\clvertalc\clcbpat5\cellx9849 
+\pard\intbl\sa100\sl240\slmult1\qc\cf2\b\fs24 EmpID\cf0\b0\f0\fs22\cell\cf2\b\f1\fs24 EmpPosition\cf0\b0\f0\fs22\cell\cf2\b\f1\fs24 DateOfJoining\cf0\b0\f0\fs22\cell\cf2\b\f1\fs24 Salary\cf0\b0\f0\fs22\cell\row\trowd\trgaph44\trrh1\trpaddl44\trpaddr44\trpaddfl3\trpaddfr3
+\clvertalc\clcfpat6\clcbpat2\cellx2284\clvertalc\clcfpat6\clcbpat2\cellx4883\clvertalc\clcfpat6\clcbpat2\cellx7587\clvertalc\clcfpat6\clcbpat2\cellx9849 
+\pard\intbl\sa100\sl240\slmult1\qc\cf1\f1\fs24 1\cf0\f0\fs22\cell\cf1\f1\fs24 Manager\cf0\f0\fs22\cell\cf1\f1\fs24 01/05/2022\cf0\f0\fs22\cell\cf1\f1\fs24 500000\cf0\f0\fs22\cell\row\trowd\trgaph44\trrh1\trpaddl44\trpaddr44\trpaddfl3\trpaddfr3
+\clvertalc\clcfpat6\clcbpat2\cellx2284\clvertalc\clcfpat6\clcbpat2\cellx4883\clvertalc\clcfpat6\clcbpat2\cellx7587\clvertalc\clcfpat6\clcbpat2\cellx9849 
+\pard\intbl\sa100\sl240\slmult1\qc\cf1\f1\fs24 2\cf0\f0\fs22\cell\cf1\f1\fs24 Executive\cf0\f0\fs22\cell\cf1\f1\fs24 02/05/2022\cf0\f0\fs22\cell\cf1\f1\fs24 75000\cf0\f0\fs22\cell\row\trowd\trgaph44\trrh1\trpaddl44\trpaddr44\trpaddfl3\trpaddfr3
+\clvertalc\clcfpat6\clcbpat2\cellx2284\clvertalc\clcfpat6\clcbpat2\cellx4883\clvertalc\clcfpat6\clcbpat2\cellx7587\clvertalc\clcfpat6\clcbpat2\cellx9849 
+\pard\intbl\sa100\sl240\slmult1\qc\cf1\f1\fs24 3\cf0\f0\fs22\cell\cf1\f1\fs24 Manager\cf0\f0\fs22\cell\cf1\f1\fs24 01/05/2022\cf0\f0\fs22\cell\cf1\f1\fs24 90000\cf0\f0\fs22\cell\row\trowd\trgaph44\trrh1\trpaddl44\trpaddr44\trpaddfl3\trpaddfr3
+\clvertalc\clcfpat6\clcbpat2\cellx2284\clvertalc\clcfpat6\clcbpat2\cellx4883\clvertalc\clcfpat6\clcbpat2\cellx7587\clvertalc\clcfpat6\clcbpat2\cellx9849 
+\pard\intbl\sa100\sl240\slmult1\qc\cf1\f1\fs24 2\cf0\f0\fs22\cell\cf1\f1\fs24 Lead\cf0\f0\fs22\cell\cf1\f1\fs24 02/05/2022\cf0\f0\fs22\cell\cf1\f1\fs24 85000\cf0\f0\fs22\cell\row\trowd\trgaph44\trrh1\trpaddl44\trpaddr44\trpaddfl3\trpaddfr3
+\clvertalc\clcfpat6\clcbpat2\cellx2284\clvertalc\clcfpat6\clcbpat2\cellx4883\clvertalc\clcfpat6\clcbpat2\cellx7587\clvertalc\clcfpat6\clcbpat2\cellx9849 
+\pard\intbl\sa100\sl240\slmult1\qc\cf1\f1\fs24 1\cf0\f0\fs22\cell\cf1\f1\fs24 Executive\cf0\f0\fs22\cell\cf1\f1\fs24 01/05/2022\cf0\f0\fs22\cell\cf1\f1\fs24 300000\cf0\f0\fs22\cell\row 
+\pard\sa200\sl276\slmult1\par
+\par
+**Q1. Write a query to fetch the EmpFname from the EmployeeInfo table in upper case and use the ALIAS name as EmpName.**\par
+```sql\par
+SELECT EmpFname AS EmpName FROM EmployeeInfo;\par
+```\par
+\par
+**Q2. Write a query to fetch the number of employees working in the department \lquote HR\rquote .**\par
+```sql\par
+SELECT COUNT(*) AS NumEmployees FROM EmployeeInfo WHERE Department = 'HR';\par
+```\par
+\par
+**Q3. Write a query to get the current date.**\par
+```sql\par
+SELECT CURRENT_DATE AS CurrentDate;\par
+```\par
+\par
+**Q4. Write a query to retrieve the first four characters of\~ EmpLname from the EmployeeInfo table.**\par
+```sql\par
+SELECT LEFT(EmpLname, 4) AS FirstFourChars FROM EmployeeInfo;\par
+```\par
+\par
+**Q5. Write a query to fetch only the place name (string before brackets) from the Address column of EmployeeInfo table.**\par
+```sql\par
+SELECT SUBSTRING_INDEX(Address, '(', 1) AS PlaceName FROM EmployeeInfo;\par
+```\par
+\par
+**Q6. Write a query to create a new table which consists of data and structure copied from the other table.**\par
+```sql\par
+CREATE TABLE NewTable AS SELECT * FROM EmployeeInfo;\par
+```\par
+\par
+**Q7. Write q query to find all the employees whose salary is between 50000 to 100000.**\par
+```sql\par
+SELECT * FROM EmployeeInfo WHERE Salary BETWEEN 50000 AND 100000;\par
+```\par
+\par
+**Q8. Write a query to find the names of employees that begin with \lquote S\rquote **\par
+```sql\par
+SELECT * FROM EmployeeInfo WHERE EmpFname LIKE 'S%';\par
+```\par
+\par
+**Q9.\~Write a query to fetch top N records.**\par
+```sql\par
+SELECT * FROM EmployeeInfo LIMIT N;\par
+```\par
+\par
+**Q10. Write a query to retrieve the EmpFname and EmpLname in a single column as \ldblquote FullName\rdblquote . The first name and the last name must be separated with space.**\par
+```sql\par
+SELECT CONCAT(EmpFname, ' ', EmpLname) AS FullName FROM EmployeeInfo;\par
+```\par
+\par
+**Q11. Write a query find number of employees whose DOB is between 02/05/1970 to 31/12/1975 and are grouped according to gender.**\par
+```sql\par
+SELECT COUNT(*) AS EmployeeCount, Gender\par
+FROM EmployeeInfo\par
+WHERE DOB BETWEEN '1970-05-02' AND '1975-12-31'\par
+GROUP BY Gender;\par
+```\par
+\par
+**Q12. Write a query to fetch all the records from the EmployeeInfo table ordered by EmpLname in descending order and Department in the ascending order.**\par
+```sql\par
+SELECT * FROM EmployeeInfo ORDER BY EmpLname DESC, Department ASC;\par
+```\par
+\par
+**Q13. Write a query to fetch details of employees whose EmpLname ends with an alphabet \lquote A\rquote  and contains five alphabets.**\par
+```sql\par
+SELECT * FROM EmployeeInfo WHERE EmpLname LIKE '%A' AND LENGTH(EmpLname) = 5;\par
+```\par
+\par
+**Q14. Write a query to fetch details of all employees excluding the employees with first names, \ldblquote Sanjay\rdblquote  and \ldblquote Sonia\rdblquote  from the EmployeeInfo table.**\par
+```sql\par
+SELECT * FROM EmployeeInfo WHERE EmpFname NOT IN ('Sanjay', 'Sonia');\par
+```\par
+\par
+**Q15. Write a query to fetch details of employees with the address as \ldblquote DELHI(DEL)\rdblquote .**\par
+```sql\par
+SELECT * FROM EmployeeInfo WHERE Address = 'Delhi(DEL)';\par
+```\par
+\par
+**Q16. Write a query to fetch all employees who also hold the managerial position.**\par
+```sql\par
+SELECT * FROM EmployeeInfo WHERE EmpID IN (SELECT EmpID FROM EmployeePosition WHERE EmpPosition = 'Manager');\par
+```\par
+\par
+**Q17.\~Write a query to fetch the department-wise count of employees sorted by department\rquote s count in ascending order.**\par
+```sql\par
+SELECT Department, COUNT(*) AS EmployeeCount\par
+FROM EmployeeInfo\par
+GROUP BY Department\par
+ORDER BY EmployeeCount ASC;\par
+```\par
+\par
+**Q18. Write a query to calculate the even and odd records from a table.**\par
+```sql\par
+SELECT * FROM EmployeeInfo WHERE EmpID % 2 = 0; -- Even records\par
+SELECT * FROM EmployeeInfo WHERE EmpID % 2 <> 0; -- Odd records\par
+```\par
+\par
+**Q19.\~Write a SQL query to retrieve employee details from EmployeeInfo table who have a date of joining in the EmployeePosition table.**\par
+```sql\par
+SELECT EmployeeInfo.*\par
+FROM EmployeeInfo\par
+JOIN EmployeePosition ON EmployeeInfo.EmpID = EmployeePosition.EmpID;\par
+```\par
+\par
+**Q20. Write a query to retrieve two minimum and maximum salaries from the EmployeePosition table.**\par
+```sql\par
+SELECT MIN(Salary) AS MinSalary, MAX(Salary) AS MaxSalary FROM EmployeePosition;\par
+```\par
+\par
+**Q21.\~Write a query to find the Nth highest salary from the table without using TOP/limit keyword.**\par
+```sql\par
+SELECT DISTINCT Salary\par
+FROM EmployeePosition e1\par
+WHERE N - 1 = (SELECT COUNT(DISTINCT Salary) FROM EmployeePosition e2 WHERE e2.Salary >= e1.Salary);\par
+```\par
+\par
+**Q22. Write a query to retrieve duplicate records from a table.**\par
+```sql\par
+SELECT EmpFname, EmpLname, COUNT(*)\par
+FROM EmployeeInfo\par
+GROUP BY EmpFname, EmpLname\par
+HAVING COUNT(*) > 1;\par
+```\par
+**Q23. Write a query to retrieve the list of employees working in the same department.**\par
+```sql\par
+SELECT Department, GROUP_CONCAT(EmpFname) AS EmployeesInDepartment\par
+FROM EmployeeInfo\par
+GROUP BY Department;\par
+```\par
+\par
+**Q24. Write a query to retrieve the last 3 records from the EmployeeInfo table.**\par
+```sql\par
+SELECT *\par
+FROM EmployeeInfo\par
+ORDER BY EmpID DESC\par
+LIMIT 3;\par
+```\par
+\par
+**Q25. Write a query to find the third-highest salary from the EmpPosition table.**\par
+```sql\par
+SELECT Salary\par
+FROM EmployeePosition\par
+ORDER BY Salary DESC\par
+LIMIT 1 OFFSET 2;\par
+```\par
+\par
+**Q26. Write a query to display the first and the last record from the EmployeeInfo table.**\par
+```sql\par
+(SELECT * FROM EmployeeInfo ORDER BY EmpID ASC LIMIT 1)\par
+UNION\par
+(SELECT * FROM EmployeeInfo ORDER BY EmpID DESC LIMIT 1);\par
+```\par
+\par
+**Q27. Write a query to add email validation to your database.**\par
+```sql\par
+-- Assuming Email is a column in the EmployeeInfo table\par
+UPDATE EmployeeInfo\par
+SET Email = NULL\par
+WHERE NOT Email REGEXP '^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\\\\.[A-Z|a-z]\{2,4\}$';\par
+```\par
+\par
+**Q28. Write a query to retrieve Departments who have fewer than 2 employees working in it.**\par
+```sql\par
+SELECT Department, COUNT(*) AS EmployeeCount\par
+FROM EmployeeInfo\par
+GROUP BY Department\par
+HAVING EmployeeCount < 2;\par
+```\par
+\par
+**Q29. Write a query to retrieve EmpPosition along with total salaries paid for each of them.**\par
+```sql\par
+SELECT EmpPosition, SUM(Salary) AS TotalSalary\par
+FROM EmployeePosition\par
+GROUP BY EmpPosition;\par
+```\par
+\par
+**Q30. Write a query to fetch 50% records from the EmployeeInfo table.**\par
+```sql\par
+SELECT * FROM EmployeeInfo\par
+ORDER BY EmpID\par
+LIMIT (SELECT COUNT(*) / 2 FROM EmployeeInfo);\par
+```\par
+____________SQL Queries based on the following database tables___________\par
+
+\pard\sl240\slmult1\cf3\highlight2\b\f2\fs24 Table \f3\endash\f2  EmployeeDetails\b0\par
+\trowd\trgaph120\trrh313\trpaddl120\trpaddr120\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx1277\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx3413\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx5273\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx7595\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx9305 
+\pard\intbl\sl240\slmult1\cf0\highlight0\b\f4 EmpId\b0\f0\fs22\cell\b\f4\fs24 FullName\b0\f0\fs22\cell\b\f4\fs24 ManagerId\b0\f0\fs22\cell\b\f4\fs24 DateOfJoining\b0\f0\fs22\cell\b\f4\fs24 City\b0\f0\fs22\cell\row\trowd\trgaph120\trrh313\trpaddl120\trpaddr120\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx1277\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx3413\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx5273\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx7595\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx9305 
+\pard\intbl\sl240\slmult1\f4\fs24 121\f0\fs22\cell\f4\fs24 John Snow\f0\fs22\cell\f4\fs24 321\f0\fs22\cell\f4\fs24 01/31/2019\f0\fs22\cell\f4\fs24 Toronto\f0\fs22\cell\row\trowd\trgaph120\trrh313\trpaddl120\trpaddr120\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx1277\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx3413\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx5273\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx7595\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx9305 
+\pard\intbl\sl240\slmult1\f4\fs24 321\f0\fs22\cell\f4\fs24 Walter White\f0\fs22\cell\f4\fs24 986\f0\fs22\cell\f4\fs24 01/30/2020\f0\fs22\cell\f4\fs24 California\f0\fs22\cell\row\trowd\trgaph120\trrh313\trpaddl120\trpaddr120\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx1277\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx3413\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx5273\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx7595\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx9305 
+\pard\intbl\sl240\slmult1\f4\fs24 421\f0\fs22\cell\f4\fs24 Kuldeep Rana\f0\fs22\cell\f4\fs24 876\f0\fs22\cell\f4\fs24 27/11/2021\f0\fs22\cell\f4\fs24 New Delhi\f0\fs22\cell\row 
+\pard\sl240\slmult1\cf3\highlight2\f2\fs24\line\b Table \f3\endash\f2  EmployeeSalary\b0\par
+\trowd\trgaph120\trrh262\trpaddl120\trpaddr120\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx2256\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx4573\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx6702\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx9364 
+\pard\intbl\sl240\slmult1\cf0\highlight0\b\f4 EmpId\b0\f0\fs22\cell\b\f4\fs24 Project\b0\f0\fs22\cell\b\f4\fs24 Salary\b0\f0\fs22\cell\b\f4\fs24 Variable\b0\f0\fs22\cell\row\trowd\trgaph120\trrh277\trpaddl120\trpaddr120\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx2256\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx4573\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx6702\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx9364 
+\pard\intbl\sl240\slmult1\f4\fs24 121\f0\fs22\cell\f4\fs24 P1\f0\fs22\cell\f4\fs24 8000\f0\fs22\cell\f4\fs24 500\f0\fs22\cell\row\trowd\trgaph120\trrh262\trpaddl120\trpaddr120\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx2256\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx4573\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx6702\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx9364 
+\pard\intbl\sl240\slmult1\f4\fs24 321\f0\fs22\cell\f4\fs24 P2\f0\fs22\cell\f4\fs24 10000\f0\fs22\cell\f4\fs24 1000\f0\fs22\cell\row\trowd\trgaph120\trrh277\trpaddl120\trpaddr120\trpaddfl3\trpaddfr3
+\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx2256\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx4573\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx6702\clvertalc\clcbpat7\clbrdrl\brdrw12\brdrs\brdrcf6\clbrdrt\brdrw12\brdrs\brdrcf6\clbrdrr\brdrw12\brdrs\brdrcf6\clbrdrb\brdrw12\brdrs\brdrcf6 \cellx9364 
+\pard\intbl\sl240\slmult1\f4\fs24 421\f0\fs22\cell\f4\fs24 P1\f0\fs22\cell\f4\fs24 12000\f0\fs22\cell\f4\fs24 0\f0\fs22\cell\row 
+\pard\sa200\sl276\slmult1\par
+\par
+**1. Write an SQL query to fetch the EmpId and FullName of all the employees working under the Manager with id \f5\endash  \lquote 986\rquote .**\par
+```sql\par
+SELECT EmpId, FullName\par
+FROM EmployeeDetails\par
+WHERE ManagerId = 986;\par
+```\par
+\par
+**2. Write an SQL query to fetch the different projects available from the EmployeeSalary table.**\par
+```sql\par
+SELECT DISTINCT Project\par
+FROM EmployeeSalary;\par
+```\par
+\par
+**3. Write an SQL query to fetch the count of employees working in project \lquote P1\rquote .**\par
+```sql\par
+SELECT COUNT(*) AS EmployeeCount\par
+FROM EmployeeSalary\par
+WHERE Project = 'P1';\par
+```\par
+\par
+**4. Write an SQL query to find the maximum, minimum, and average salary of the employees.**\par
+```sql\par
+SELECT MAX(Salary) AS MaxSalary, MIN(Salary) AS MinSalary, AVG(Salary) AS AvgSalary\par
+FROM EmployeeSalary;\par
+```\par
+\par
+**5. Write an SQL query to find the employee id whose salary lies in the range of 9000 and 15000.**\par
+```sql\par
+SELECT EmpId\par
+FROM EmployeeSalary\par
+WHERE Salary BETWEEN 9000 AND 15000;\par
+```\par
+\par
+**6. Write an SQL query to fetch those employees who live in Toronto and work under the manager with ManagerId \endash  321.**\par
+```sql\par
+SELECT *\par
+FROM EmployeeDetails\par
+WHERE City = 'Toronto' AND ManagerId = 321;\par
+```\par
+\par
+**7. Write an SQL query to fetch all the employees who either live in California or work under a manager with ManagerId \endash  321.**\par
+```sql\par
+SELECT *\par
+FROM EmployeeDetails\par
+WHERE City = 'California' OR ManagerId = 321;\par
+```\par
+\par
+**8. Write an SQL query to fetch all those employees who work on Projects other than P1.**\par
+```sql\par
+SELECT *\par
+FROM EmployeeSalary\par
+WHERE Project != 'P1';\par
+```\par
+\par
+**9. Write an SQL query to display the total salary of each employee adding the Salary with Variable value.**\par
+```sql\par
+SELECT EmpId, Salary + Variable AS TotalSalary\par
+FROM EmployeeSalary;\par
+```\par
+\par
+**10. Write an SQL query to fetch the employees whose name begins with any two characters, followed by a text \ldblquote hn\rdblquote  and ends with any sequence of characters.**\par
+```sql\par
+SELECT *\par
+FROM EmployeeDetails\par
+WHERE FullName LIKE '__hn%';\par
+```\par
+\par
+**11. Write an SQL query to fetch all the EmpIds which are present in either of the tables \endash  \lquote EmployeeDetails\rquote  and \lquote EmployeeSalary\rquote .**\par
+```sql\par
+SELECT EmpId FROM EmployeeDetails\par
+UNION\par
+SELECT EmpId FROM EmployeeSalary;\par
+```\par
+\par
+**12. Write an SQL query to fetch common records between two tables.**\par
+```sql\par
+SELECT * FROM EmployeeDetails\par
+INTERSECT\par
+SELECT * FROM EmployeeSalary;\par
+```\par
+\par
+**13. Write an SQL query to fetch records that are present in one table but not in another table.**\par
+```sql\par
+SELECT * FROM EmployeeDetails\par
+EXCEPT\par
+SELECT * FROM EmployeeSalary;\par
+```\par
+\par
+**14. Write an SQL query to fetch the EmpIds that are present in both the tables \endash  \lquote EmployeeDetails\rquote  and \lquote EmployeeSalary\rquote .**\par
+```sql\par
+SELECT EmpId FROM EmployeeDetails\par
+INTERSECT\par
+SELECT EmpId FROM EmployeeSalary;\par
+```\par
+\par
+**15. Write an SQL query to fetch the EmpIds that are present in EmployeeDetails but not in EmployeeSalary.**\par
+```sql\par
+SELECT EmpId FROM EmployeeDetails\par
+EXCEPT\par
+SELECT EmpId FROM EmployeeSalary;\par
+```\par
+\par
+**16. Write an SQL query to fetch the employee\rquote s full names and replace the space with \lquote -\rquote .**\par
+```sql\par
+SELECT REPLACE(FullName, ' ', '-') AS ModifiedName FROM EmployeeDetails;\par
+```\par
+\par
+**17. Write an SQL query to fetch the position of a given character(s) in a field.**\par
+```sql\par
+SELECT EmpId, CHARINDEX('n', FullName) AS PositionOfN FROM EmployeeDetails;\par
+```\par
+\par
+**18. Write an SQL query to display both the EmpId and ManagerId together.**\par
+```sql\par
+SELECT EmpId, ManagerId FROM EmployeeDetails;\par
+```\par
+\par
+**19. Write a query to fetch only the first name(string before space) from the FullName column of the EmployeeDetails table.**\par
+```sql\par
+SELECT SUBSTRING(FullName, 1, CHARINDEX(' ', FullName) - 1) AS FirstName FROM EmployeeDetails;\par
+```\par
+\par
+**20. Write an SQL query to uppercase the name of the employee and lowercase the city values.**\par
+```sql\par
+SELECT UPPER(FullName) AS UppercaseName, LOWER(City) AS LowercaseCity FROM EmployeeDetails;\par
+```\par
+\par
+**21. Write an SQL query to find the count of the total occurrences of a particular character \endash  \lquote n\rquote  in the FullName field.**\par
+```sql\par
+SELECT EmpId, LEN(FullName) - LEN(REPLACE(FullName, 'n', '')) AS CountOfN FROM EmployeeDetails;\par
+```\par
+\par
+**22. Write an SQL query to update the employee names by removing leading and trailing spaces.**\par
+```sql\par
+UPDATE EmployeeDetails SET FullName = LTRIM(RTRIM(FullName));\par
+```\par
+\par
+**23. Fetch all the employees who are not working on any project.**\par
+```sql\par
+SELECT *\par
+FROM EmployeeDetails\par
+WHERE EmpId NOT IN (SELECT DISTINCT EmpId FROM EmployeeSalary);\par
+```\par
+\par
+**24. Write an SQL query to fetch employee names having a salary greater than or equal to 5000 and less than or equal to 10000.**\par
+```sql\par
+SELECT FullName\par
+FROM EmployeeDetails\par
+WHERE EmpId IN (SELECT EmpId FROM EmployeeSalary WHERE Salary BETWEEN 5000 AND 10000);\par
+```\par
+\par
+**25. Write an SQL query to find the current date-time.**\par
+```sql\par
+SELECT GETDATE() AS CurrentDateTime;\par
+```\par
+\par
+**26. Write an SQL query to fetch all the Employee details from the EmployeeDetails table who joined in the Year 2020.**\par
+```sql\par
+SELECT *\par
+FROM EmployeeDetails\par
+WHERE YEAR(DateOfJoining) = 2020;\par
+```\par
+\par
+**27. Write an SQL query to fetch all employee records from the EmployeeDetails table who have a salary record in the EmployeeSalary table.**\par
+```sql\par
+SELECT *\par
+FROM EmployeeDetails\par
+WHERE EmpId IN (SELECT DISTINCT EmpId FROM EmployeeSalary);\par
+```\par
+\par
+**28. Write an SQL query to fetch the project-wise count of employees sorted by the project\rquote s count in descending order.**\par
+```sql\par
+SELECT Project, COUNT(EmpId) AS EmployeeCount\par
+FROM EmployeeSalary\par
+GROUP BY Project\par
+ORDER BY EmployeeCount DESC;\par
+```\par
+\par
+**29. Write a query to fetch employee names and salary records. Display the employee details even if the salary record is not present for the employee.**\par
+```sql\par
+SELECT ED.EmpId, FullName, Project, Salary\par
+FROM EmployeeDetails ED\par
+LEFT JOIN EmployeeSalary ES ON ED.EmpId = ES.EmpId;\par
+```\par
+\par
+**30. Write an SQL query to join 3 tables.**\par
+```sql\par
+-- Assuming three tables are EmployeeDetails, EmployeeSalary, and AnotherTable\par
+SELECT *\par
+FROM EmployeeDetails ED\par
+JOIN EmployeeSalary ES ON ED.EmpId = ES.EmpId\par
+JOIN AnotherTable AT ON ED.EmpId = AT.EmpId;\par
+```\par
+\par
+**31. Write an SQL query to fetch all the Employees who are also managers from the EmployeeDetails table.**\par
+```sql\par
+SELECT ED.EmpId, FullName, ManagerId\par
+FROM EmployeeDetails ED\par
+INNER JOIN EmployeeDetails Manager ON ED.EmpId = Manager.ManagerId;\par
+```\par
+\par
+**32. Write an SQL query to fetch duplicate records from EmployeeDetails (without considering the primary key \endash  EmpId).**\par
+```sql\par
+SELECT EmpId, FullName, ManagerId, DateOfJoining, City\par
+FROM EmployeeDetails\par
+GROUP BY EmpId, FullName, ManagerId, DateOfJoining, City\par
+HAVING COUNT(*) > 1;\par
+```\par
+\par
+**33. Write an SQL query to remove duplicates from a table without using a temporary table.**\par
+```sql\par
+WITH CTE AS (\par
+    SELECT EmpId, FullName, ManagerId, DateOfJoining, City,\par
+           ROW_NUMBER() OVER (PARTITION BY EmpId, FullName, ManagerId, DateOfJoining, City ORDER BY EmpId) AS RowNum\par
+    FROM EmployeeDetails\par
+)\par
+DELETE FROM CTE WHERE RowNum > 1;\par
+```\par
+\par
+**34. Write an SQL query to fetch only odd rows from the table.**\par
+```sql\par
+SELECT EmpId, FullName, ManagerId, DateOfJoining, City\par
+FROM (\par
+    SELECT *, ROW_NUMBER() OVER (ORDER BY EmpId) AS RowNum\par
+    FROM EmployeeDetails\par
+) AS T\par
+WHERE RowNum % 2 <> 0;\par
+```\par
+\par
+**35. Write an SQL query to fetch only even rows from the table.**\par
+```sql\par
+SELECT EmpId, FullName, ManagerId, DateOfJoining, City\par
+FROM (\par
+    SELECT *, ROW_NUMBER() OVER (ORDER BY EmpId) AS RowNum\par
+    FROM EmployeeDetails\par
+) AS T\par
+WHERE RowNum % 2 = 0;\par
+```\par
+\par
+**36. Write an SQL query to create a new table with data and structure copied from another table.**\par
+```sql\par
+SELECT *\par
+INTO NewTable\par
+FROM ExistingTable;\par
+```\par
+\par
+**37. Write an SQL query to create an empty table with the same structure as some other table.**\par
+```sql\par
+SELECT *\par
+INTO NewEmptyTable\par
+FROM ExistingTable\par
+WHERE 1 = 0;\par
+```\par
+\par
+**38. Write an SQL query to fetch top n records.**\par
+```sql\par
+SELECT TOP(n) *\par
+FROM TableName;\par
+```\par
+\par
+**39. Write an SQL query to find the nth highest salary from a table.**\par
+```sql\par
+SELECT DISTINCT Salary\par
+FROM EmployeeSalary E1\par
+WHERE n = (\par
+    SELECT COUNT(DISTINCT Salary)\par
+    FROM EmployeeSalary E2\par
+    WHERE E1.Salary <= E2.Salary\par
+);\par
+```\par
+\par
+**40. Write SQL query to find the 3rd highest salary from a table without using the TOP/limit keyword.**\par
+```sql\par
+SELECT Salary\par
+FROM EmployeeSalary\par
+ORDER BY Salary DESC\par
+OFFSET 2 ROWS\par
+FETCH NEXT 1 ROW ONLY;\par
+```\f0\par
+}
+ 

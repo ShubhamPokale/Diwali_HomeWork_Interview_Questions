@@ -1,0 +1,712 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 C++ Interview Questions \par
+\par
+**What is C++?**\par
+C++ is a general-purpose programming language created as an extension of the C programming language. It provides object-oriented features, such as classes and inheritance, and also supports low-level memory manipulation.\par
+\par
+**Why C++?**\par
+C++ is widely used for various types of software development, including system/software development, game development, embedded firmware, and application software. It offers a good balance between high-level abstractions and low-level manipulation of hardware resources.\par
+\par
+**What is namespace in C++?**\par
+A namespace in C++ is a declarative region that provides a scope to the identifiers (names of variables, functions, classes, etc.) inside it. It helps in organizing the code and avoiding naming conflicts.\par
+\par
+**What is operator overloading in C++?**\par
+Operator overloading in C++ allows you to define how operators should behave when applied to user-defined data types (objects). For example, you can define the '+' operator for your own class to perform custom addition.\par
+\par
+**What is the difference between C and C++?**\par
+C++ is an extension of C, and while C is a procedural programming language, C++ supports both procedural and object-oriented programming paradigms. C++ introduces features like classes, objects, and inheritance that are not present in C.\par
+\par
+**What is a template in C++?**\par
+Templates in C++ allow you to write generic programs that work with any data type. They enable you to create functions or classes that can operate with different data types without having to rewrite the code.\par
+\par
+**What is using namespace std in C++?**\par
+The statement `using namespace std` in C++ brings the entire `std` (Standard) namespace into the current scope, allowing you to use standard C++ library functions and objects without prefixing them with `std::`.\par
+\par
+**What is a pointer in C++?**\par
+A pointer in C++ is a variable that stores the memory address of another variable. It allows for dynamic memory allocation and manipulation.\par
+\par
+**What is a function in C++?**\par
+A function in C++ is a block of code that performs a specific task. Functions are used to break down the code into smaller, modular pieces, making it easier to understand and maintain.\par
+\par
+**What is a destructor in C++?**\par
+A destructor in C++ is a special member function of a class that is executed when an object of the class goes out of scope or is explicitly deleted. It is responsible for releasing resources held by the object.\par
+\par
+**What is STL in C++?**\par
+STL stands for Standard Template Library. It is a powerful set of C++ template classes to provide general-purpose classes and functions with templates that implement many popular and commonly used algorithms and data structures.\par
+\par
+**How to run a C++ program in cmd?**\par
+To run a C++ program in the command prompt (cmd), you need to compile the source code using a C++ compiler (such as g++ or Microsoft Visual C++) and then execute the generated executable. The commands may vary based on the compiler. Example for g++:\par
+```bash\par
+g++ your_program.cpp -o your_program\par
+./your_program\par
+```\par
+\par
+**What is type casting in C++?**\par
+Type casting in C++ is the process of converting a variable from one data type to another. It can be done explicitly using casting operators like static_cast, dynamic_cast, const_cast, and reinterpret_cast.\par
+\par
+**How to use a string in C++?**\par
+In C++, you can use the `std::string` class to work with strings. You can declare a string, concatenate, compare, and perform various operations on strings using member functions of the `std::string` class.\par
+\par
+**What is stream in C++?**\par
+In C++, streams are used for input and output operations. They are an abstraction to handle I/O operations on various devices, such as the console or files. The standard library provides `iostream` for input and output stream operations.\par
+\par
+**What is the difference between structure and class in C++?**\par
+In C++, both structures and classes can have member variables and member functions. The key difference is that members of a structure have public access by default, while members of a class have private access by default.\par
+\par
+**How many keywords in C++?**\par
+C++ has a set of reserved keywords that have special meanings. The exact number may vary based on the standard, but there are around 90 keywords in C++.\par
+\par
+**What is iostream in C++?**\par
+`iostream` is a header file in C++ that stands for Input/Output Stream. It provides functionality to perform standard input and output operations using the `cin` (for input) and `cout` (for output) streams.\par
+\par
+**How to give space in C++?**\par
+In C++, you can use the `std::setw` manipulator from the `<iomanip>` header to set the width of the next input/output field. It is often used to format output by specifying the width of each column.\par
+\par
+**Which operator cannot be overloaded in C++?**\par
+The `sizeof` operator and the member access operators (`.` and `->`) cannot be overloaded in C++.\par
+\par
+**What is an exception in C++?**\par
+An exception in C++ is an event that occurs during the execution of a program, leading to the disruption of the normal flow of the program. Exception handling allows you to deal with such unexpected events and take appropriate actions.\par
+\par
+**What is the difference between C++ and Java?**\par
+C++ and Java are both object-oriented programming languages, but there are differences. C++ is closer to the hardware, allows manual memory management, and supports multiple inheritance. Java, on the other hand, is platform-independent, has automatic memory management, and does not support multiple inheritance.\par
+\par
+**What is stack in C++?**\par
+A stack in C++ is a data structure that follows the Last In, First Out (LIFO) principle. Elements are added and removed from the same end, called the top of the stack. The C++ standard library provides a stack container.\par
+\par
+**What is conio.h in C++?**\par
+`conio.h` is a header file in C and C++ used for console input/output operations. It provides functions like `getch()` and `clrscr()` that are commonly used for console-based programs. Note that it is not a standard C++ header and may not be available in all compilers.\par
+\par
+**What is iterator in C++?**\par
+An iterator in C++ is an object that allows iterating through the elements of a container, like an array or a collection. It provides a way to access elements sequentially without exposing the underlying details of the container.\par
+\par
+**What is :: in C++?**\par
+The scope resolution operator `::` in C++ is used to access the members (variables or functions) of a class or namespace. It allows you to specify the context from which a particular identifier is to be retrieved.\par
+\par
+**What is enum in C++?**\par
+An enum in C++ is a user-defined data type that consists of a set of named integral constants, known as enumerators. Enums provide a way to create named constant values that make the code more readable and maintainable.\par
+\par
+**What is endl in C++?**\par
+`endl` in C++ is an output manipulator used with the `std::cout` stream to insert a newline character (`'\\n'`) and flush the output buffer. It is equivalent to using `'\\n'` but also ensures that the output is immediately flushed.\par
+\par
+**Which operators can be overloaded in C++?**\par
+In C++, the following operators can be overloaded:\par
+- Unary operators: `+`, `-`, `++`, `--`, `!`, `~`\par
+- Binary arithmetic operators: `+`, `-`, `*`, `/`, `%`\par
+- Binary comparison operators: `==`, `!=`, `<`, `>`, `<=`, `>=`\par
+- Assignment operators: `=`, `+=`, `-=`, `*=`, `/=`, `%=`\par
+- Increment and Decrement operators: `++`, `--`\par
+- Bitwise operators: `&`, `|`, `^`, `<<`, `>>`\par
+\par
+**What is an expression in C++?**\par
+An expression in C++ is a combination of values, variables, operators, and functions that evaluates to a single value. Expressions can be simple, like a variable or a constant, or complex, involving multiple operations.\par
+\par
+**Why namespace std is used in C++?**\par
+`namespace std` in C++ is used to bring the entire Standard C++ Library into scope. It allows you to use standard C++ features, such as input and output operations (`cout`, `cin`), containers, algorithms, and more, without having to prefix them with `std::`.\par
+\par
+**What are the different data types present in C++?**\par
+C++ supports various data types, including fundamental types like `int`, `float`, `double`, `char`, and user-defined types like `struct`, `class`, `enum`. Additionally, C++ supports modifiers like `const` and qualifiers like `signed` and `unsigned` to modify the behavior of basic data types.\par
+\par
+**What are the advantages of C++?**\par
+Some advantages of C++ include:\par
+- Object-oriented programming support\par
+- Low-level manipulation of memory\par
+- Efficient and versatile language\par
+- Rich standard library (STL)\par
+- Support for both procedural and object-oriented programming paradigms\par
+\par
+**What is the difference between reference and pointer?**\par
+- A reference is an alias to an existing variable, and it must be initialized during declaration. Once a reference is initialized, it cannot be changed to refer to a different variable.\par
+- A pointer is a variable that stores the memory address of another variable. Pointers can be reassigned to point to different variables during their lifetime.\par
+\par
+**What is exception handling in C++?**\par
+Exception handling in C++ is a mechanism to deal with runtime errors. It allows you to catch and handle exceptional conditions, preventing the program from terminating abruptly. The keywords `try`, `catch`, `throw`, and `finally` are used in exception handling.\par
+\par
+**What is STL in C++ with example?**\par
+STL (Standard Template Library) in C++ is a collection of template classes and functions that provide common data structures and algorithms. Examples include containers like `vector`, `map`, and algorithms like `sort`, `find`.\par
+\par
+**What is flush in C++?**\par
+In C++, `flush` refers to flushing the output buffer, which means forcing the output to be written immediately, rather than waiting for the buffer to be filled or the program to finish. It is often used with `std::endl` to ensure immediate output.\par
+\par
+**What is a class in C++?**\par
+A class in C++ is a user-defined data type that encapsulates data and functions into a single unit. It serves as a blueprint for creating objects, which are instances of the class.\par
+\par
+**What is inline function in C++?**\par
+An inline function in C++ is a function that, upon invocation, is expanded by the compiler in place of the function call. It is a suggestion to the compiler for optimization and can improve performance for small, frequently called functions.\par
+\par
+**What is friend function in C++?**\par
+A friend function in C++ is a function that is not a member of a class but is granted access to its private and protected members. It is declared using the `friend` keyword and is often used for operations that require access to class internals.\par
+\par
+**How to use vector in C++?**\par
+In C++, a vector is a dynamic array that can grow or shrink in size. To use a vector, include the `<vector>` header and declare a vector using the syntax `std::vector<T>`. You can then use functions like `push_back`, `pop_back`, and `size` to manipulate and query the vector.\par
+\par
+**What is vector in C++?**\par
+In C++, a vector is a dynamic array that can resize itself. It is part of the Standard Template Library (STL) and is implemented as a template class (`std::vector`). Vectors provide dynamic storage with constant-time access to elements.\par
+\par
+**What is scope resolution operator in C++?**\par
+The scope resolution operator `::` in C++ is used to access the members of a class or namespace. It allows you to qualify a member name with the name of the class or namespace in which it is declared.\par
+\par
+**What are character constants in C++?**\par
+Character constants in C++ are literal values representing individual characters. They are enclosed in single quotes, such as `'A'` or `'5'`. Additionally, special escape sequences like `'\\n'` represent newline characters.\par
+\par
+**What are templates in C++?**\par
+Templates in C++ allow you to write generic code that can work with different data types. They are a way to create functions or classes with placeholders for types, allowing flexibility and code reuse.\par
+\par
+**How to sort vector in C++?**\par
+To sort a vector in C++, you can use the `std::sort` algorithm from the `<algorithm>` header. For example:\par
+```cpp\par
+#include <vector>\par
+#include <algorithm>\par
+\par
+int main() \{\par
+    std::vector<int> myVector = \{3, 1, 4, 1, 5, 9, 2, 6, 5\};\par
+    std::sort(myVector.begin(), myVector.end());\par
+\par
+    // Now myVector is sorted in ascending order\par
+    return 0;\par
+\}\par
+```\par
+\par
+**What is pure virtual function in C++?**\par
+A pure virtual function in C++ is a virtual function declared in a base class but not defined. It is marked with the `= 0` specifier. A class containing one or more pure virtual functions is called an abstract class, and it cannot be instantiated.\par
+\par
+**How to use map in C++?**\par
+In C++, a `std::map` is a container that stores key-value pairs in a sorted order based on the keys. Here's an example of how to use a map:\par
+```cpp\par
+#include <iostream>\par
+#include <map>\par
+\par
+int main() \{\par
+    // Declare a map with int keys and string values\par
+    std::map<int, std::string> myMap;\par
+\par
+    // Insert key-value pairs\par
+    myMap[1] = "One";\par
+    myMap[2] = "Two";\par
+    myMap[3] = "Three";\par
+\par
+    // Access elements\par
+    std::cout << "Value corresponding to key 2: " << myMap[2] << std::endl;\par
+\par
+    // Iterate through the map\par
+    for (const auto& pair : myMap) \{\par
+        std::cout << pair.first << ": " << pair.second << std::endl;\par
+    \}\par
+\par
+    return 0;\par
+\}\par
+```\par
+\par
+**How to empty a vector in C++?**\par
+To empty a vector in C++, you can use the `clear` method. Here's an example:\par
+```cpp\par
+#include <iostream>\par
+#include <vector>\par
+\par
+int main() \{\par
+    // Declare a vector\par
+    std::vector<int> myVector = \{1, 2, 3, 4, 5\};\par
+\par
+    // Clear the vector\par
+    myVector.clear();\par
+\par
+    // Now, myVector is empty\par
+    std::cout << "Vector size after clearing: " << myVector.size() << std::endl;\par
+\par
+    return 0;\par
+\}\par
+```\par
+\par
+**How to remove segmentation fault in C++?**\par
+Segmentation faults often occur due to accessing memory that is not allocated or accessing memory beyond the bounds of an array or container. To prevent segmentation faults:\par
+- Ensure that you allocate memory properly.\par
+- Avoid accessing elements beyond the bounds of arrays or containers.\par
+- Check for null pointers before dereferencing.\par
+\par
+**How to initialize a 2d vector in C++?**\par
+You can initialize a 2D vector in C++ using nested vector initialization. Here's an example:\par
+```cpp\par
+#include <iostream>\par
+#include <vector>\par
+\par
+int main() \{\par
+    // Initialize a 2D vector with 3 rows and 4 columns, all initialized to 0\par
+    std::vector<std::vector<int>> my2DVector(3, std::vector<int>(4, 0));\par
+\par
+    // Access and modify elements\par
+    my2DVector[1][2] = 42;\par
+\par
+    // Print the elements\par
+    for (const auto& row : my2DVector) \{\par
+        for (int element : row) \{\par
+            std::cout << element << " ";\par
+        \}\par
+        std::cout << std::endl;\par
+    \}\par
+\par
+    return 0;\par
+\}\par
+```\par
+\par
+**What is OOP in C++?**\par
+OOP (Object-Oriented Programming) in C++ is a programming paradigm that uses objects, which are instances of classes, to design and organize code. It involves concepts such as encapsulation, inheritance, polymorphism, and abstraction.\par
+\par
+**What is a constructor in C++?**\par
+A constructor in C++ is a special member function of a class that is called when an object is created. It is used to initialize the object's data members and set up the object.\par
+\par
+**What is inheritance in C++?**\par
+Inheritance in C++ is a mechanism that allows a class (called the derived class) to inherit properties and behaviors from another class (called the base class). It promotes code reuse and supports the "is-a" relationship between classes.\par
+\par
+**What is an object in C++?**\par
+An object in C++ is an instance of a class. It represents a real-world entity and encapsulates data and functionality related to that entity.\par
+\par
+**What is encapsulation in C++?**\par
+Encapsulation in C++ is the bundling of data (attributes) and functions (methods) that operate on the data into a single unit known as a class. It restricts access to the internal details of the class and allows controlled access through public interfaces.\par
+\par
+**What is an abstraction in C++?**\par
+Abstraction in C++ is the process of simplifying complex systems by modeling classes based on the essential features they possess. It involves identifying the relevant properties and behaviors of objects and ignoring the irrelevant details.\par
+\par
+**What is a member function in C++?**\par
+A member function in C++ is a function that is declared within a class and operates on the data members of that class. It is called using an object of the class and can access the class's private and protected members.\par
+\par
+**What is a virtual base class in C++?**\par
+A virtual base class in C++ is a base class that is marked as virtual to prevent multiple instances of the base class when it is inherited by multiple paths in a class hierarchy. This avoids ambiguity and ensures that there is only one instance of the virtual base class in the derived class.\par
+\par
+**How to access private members of a class in C++?**\par
+Private members of a class in C++ are not directly accessible from outside the class. To access them, you can use public member functions (getters and setters) that provide controlled access to private members. Here's an example:\par
+\par
+```cpp\par
+#include <iostream>\par
+\par
+class MyClass \{\par
+private:\par
+    int privateData;\par
+\par
+public:\par
+    // Getter to access privateData\par
+    int getPrivateData() const \{\par
+        return privateData;\par
+    \}\par
+\par
+    // Setter to modify privateData\par
+    void setPrivateData(int value) \{\par
+        privateData = value;\par
+    \}\par
+\};\par
+\par
+int main() \{\par
+    MyClass myObject;\par
+    \par
+    // Access privateData using the getter\par
+    std::cout << "Private Data: " << myObject.getPrivateData() << std::endl;\par
+\par
+    // Modify privateData using the setter\par
+    myObject.setPrivateData(42);\par
+\par
+    // Access privateData again\par
+    std::cout << "Updated Private Data: " << myObject.getPrivateData() << std::endl;\par
+\par
+    return 0;\par
+\}\par
+```\par
+\par
+**How to call a base class constructor from a derived class in C++?**\par
+In C++, you can call the base class constructor from a derived class using the member initializer list. Here's an example:\par
+\par
+```cpp\par
+#include <iostream>\par
+\par
+class BaseClass \{\par
+public:\par
+    BaseClass(int value) \{\par
+        std::cout << "BaseClass Constructor: " << value << std::endl;\par
+    \}\par
+\};\par
+\par
+class DerivedClass : public BaseClass \{\par
+public:\par
+    // Call the BaseClass constructor from DerivedClass\par
+    DerivedClass(int value) : BaseClass(value) \{\par
+        std::cout << "DerivedClass Constructor" << std::endl;\par
+    \}\par
+\};\par
+\par
+int main() \{\par
+    DerivedClass derivedObject(42);\par
+\par
+    return 0;\par
+\}\par
+```\par
+\par
+**What is an abstract class in C++?**\par
+An abstract class in C++ is a class that cannot be instantiated and may contain one or more pure virtual functions. Abstract classes serve as base classes for other classes and provide an interface for derived classes to implement. Instances of abstract classes cannot be created, but pointers and references to them can be used.\par
+\par
+**What is containership in C++?**\par
+It seems there might be a slight typo in the term "containership." If you are referring to "container ship," it is a large ship designed to carry cargo containers. In the context of C++, the term might be related to containers, such as those in the Standard Template Library (STL), which include data structures like vectors, lists, queues, and maps.\par
+\par
+**What is data hiding in C++?**\par
+Data hiding in C++ is the practice of restricting the access to certain details of a class and only exposing what is necessary. It involves declaring data members as private or protected, and providing controlled access to them through public member functions (getters and setters). This helps in encapsulating the implementation details and preventing direct manipulation of the internal state of an object.\par
+\par
+**What is runtime polymorphism in C++?**\par
+Runtime polymorphism in C++ is achieved through virtual functions and is associated with the ability of objects of different classes to respond to the same message (function call) in different ways. It involves the use of a base class pointer or reference to call a derived class's method, allowing for dynamic method binding at runtime.\par
+\par
+**What is a copy constructor in C++?**\par
+A copy constructor in C++ is a special constructor that creates a new object as a copy of an existing object. It is invoked when an object is passed by value, returned by value, or explicitly called with another object as an argument. The default copy constructor performs a member-wise copy, but a user-defined copy constructor can be provided for more complex objects.\par
+\par
+**How is modularity introduced in C++?**\par
+Modularity in C++ is introduced through the use of functions, classes, and namespaces. Functions allow you to encapsulate a block of code and provide a modular and reusable unit. Classes and objects support object-oriented programming (OOP) and encapsulate data and functions into a single unit. Namespaces help in organizing code into separate logical units, preventing naming conflicts.\par
+\par
+**What is the size of an empty class in C++?**\par
+The size of an empty class in C++ is not zero. It is at least one byte to ensure that two distinct objects of the empty class have different addresses. This is specified by the C++ standard to guarantee that each object has a unique address, even if the class is empty.\par
+\par
+________C ++ Programming Interview Questions__________\par
+**How to write hello world in C++?**\par
+```cpp\par
+#include <iostream>\par
+\par
+int main() \{\par
+    std::cout << "Hello, World!" << std::endl;\par
+    return 0;\par
+\}\par
+```\par
+\par
+**How to input string in C++?**\par
+```cpp\par
+#include <iostream>\par
+#include <string>\par
+\par
+int main() \{\par
+    std::string userInput;\par
+    std::cout << "Enter a string: ";\par
+    std::cin >> userInput;\par
+    std::cout << "You entered: " << userInput << std::endl;\par
+    return 0;\par
+\}\par
+```\par
+\par
+**How to reverse a string in C++?**\par
+```cpp\par
+#include <iostream>\par
+#include <algorithm>\par
+\par
+int main() \{\par
+    std::string str = "Hello, World!";\par
+    std::reverse(str.begin(), str.end());\par
+    std::cout << "Reversed string: " << str << std::endl;\par
+    return 0;\par
+\}\par
+```\par
+\par
+**How to convert integer to string in C++?**\par
+```cpp\par
+#include <iostream>\par
+#include <string>\par
+\par
+int main() \{\par
+    int number = 42;\par
+    std::string str = std::to_string(number);\par
+    std::cout << "Converted string: " << str << std::endl;\par
+    return 0;\par
+\}\par
+```\par
+\par
+**How to input string in C++ with spaces?**\par
+```cpp\par
+#include <iostream>\par
+#include <string>\par
+\par
+int main() \{\par
+    std::string userInput;\par
+    std::cout << "Enter a string with spaces: ";\par
+    std::getline(std::cin, userInput);\par
+    std::cout << "You entered: " << userInput << std::endl;\par
+    return 0;\par
+\}\par
+```\par
+\par
+**How to dynamically allocate a 2d array in C++?**\par
+```cpp\par
+#include <iostream>\par
+\par
+int main() \{\par
+    int rows = 3;\par
+    int cols = 4;\par
+\par
+    // Dynamically allocate a 2D array\par
+    int** matrix = new int*[rows];\par
+    for (int i = 0; i < rows; ++i) \{\par
+        matrix[i] = new int[cols];\par
+    \}\par
+\par
+    // Access and manipulate the array as needed\par
+\par
+    // Deallocate the memory\par
+    for (int i = 0; i < rows; ++i) \{\par
+        delete[] matrix[i];\par
+    \}\par
+    delete[] matrix;\par
+\par
+    return 0;\par
+\}\par
+```\par
+\par
+**How to use goto statement in C++?**\par
+The use of `goto` is generally discouraged in modern C++ programming due to its potential to create unreadable and unmaintainable code. However, here is an example:\par
+```cpp\par
+#include <iostream>\par
+\par
+int main() \{\par
+    int i = 0;\par
+\par
+    start:\par
+        std::cout << i << " ";\par
+        ++i;\par
+\par
+        if (i < 5) \{\par
+            goto start;\par
+        \}\par
+\par
+    return 0;\par
+\}\par
+```\par
+\par
+**What is function overriding in C++?**\par
+Function overriding in C++ occurs when a derived class provides a specific implementation for a function that is already defined in its base class. It is a feature of polymorphism. To override a function in a derived class, the function in the base class must be declared as virtual.\par
+\par
+```cpp\par
+#include <iostream>\par
+\par
+class Base \{\par
+public:\par
+    virtual void display() \{\par
+        std::cout << "Base Class" << std::endl;\par
+    \}\par
+\};\par
+\par
+class Derived : public Base \{\par
+public:\par
+    void display() override \{\par
+        std::cout << "Derived Class" << std::endl;\par
+    \}\par
+\};\par
+\par
+int main() \{\par
+    Base* basePtr = new Derived();\par
+    basePtr->display(); // Calls the overridden function in the Derived class\par
+    delete basePtr;\par
+    return 0;\par
+\}\par
+```\par
+\par
+**What is bool in C++?**\par
+`bool` is a built-in data type in C++ representing Boolean values. It can have two possible values: `true` or `false`. Boolean variables are often used in conditions for decision-making in control flow statements.\par
+\par
+```cpp\par
+#include <iostream>\par
+\par
+int main() \{\par
+    bool isTrue = true;\par
+    bool isFalse = false;\par
+\par
+    std::cout << std::boolalpha; // Enables printing true/false instead of 1/0\par
+    std::cout << "isTrue: " << isTrue << std::endl;\par
+    std::cout << "isFalse: " << isFalse << std::endl;\par
+\par
+    return 0;\par
+\}\par
+```\par
+\par
+**How to set decimal places in C++?**\par
+```cpp\par
+#include <iostream>\par
+#include <iomanip>\par
+\par
+int main() \{\par
+    double value = 3.14159;\par
+\par
+    std::cout << std::fixed << std::setprecision(2); // Set precision to 2 decimal places\par
+    std::cout << "Value with 2 decimal places: " << value << std::endl;\par
+\par
+    return 0;\par
+\}\par
+```\par
+\par
+**How to get absolute value in C++?**\par
+```cpp\par
+#include <iostream>\par
+#include <cmath>\par
+\par
+int main() \{\par
+    int num = -42;\par
+    int absValue = std::abs(num);\par
+\par
+    std::cout << "Absolute value of " << num << " is " << absValue << std::endl;\par
+\par
+    return 0;\par
+\}\par
+```\par
+\par
+**How to concatenate string in C++?**\par
+```cpp\par
+#include <iostream>\par
+#include <string>\par
+\par
+int main() \{\par
+    std::string str1 = "Hello, ";\par
+    std::string str2 = "World!";\par
+    std::string result = str1 + str2;\par
+\par
+    std::cout << "Concatenated String: " << result << std::endl;\par
+\par
+    return 0;\par
+\}\par
+```\par
+\par
+**How to convert char to int in C++?**\par
+```cpp\par
+#include <iostream>\par
+\par
+int main() \{\par
+    char charValue = '5';\par
+    int intValue = charValue - '0';\par
+\par
+    std::cout << "Converted Integer: " << intValue << std::endl;\par
+\par
+    return 0;\par
+\}\par
+```\par
+\par
+**How to generate random numbers in C++ with a range?**\par
+```cpp\par
+#include <iostream>\par
+#include <cstdlib>\par
+#include <ctime>\par
+\par
+int main() \{\par
+    // Seed the random number generator\par
+    std::srand(std::time(nullptr));\par
+\par
+    // Generate a random number in the range [1, 10]\par
+    int randomNum = std::rand() % 10 + 1;\par
+\par
+    std::cout << "Random Number: " << randomNum << std::endl;\par
+\par
+    return 0;\par
+\}\par
+```\par
+\par
+**How to find absolute value in C++?**\par
+```cpp\par
+#include <iostream>\par
+#include <cstdlib>\par
+\par
+int main() \{\par
+    int num = -42;\par
+    int absValue = std::abs(num);\par
+\par
+    std::cout << "Absolute value of " << num << " is " << absValue << std::endl;\par
+\par
+    return 0;\par
+\}\par
+```\par
+\par
+**How to write a class in C++?**\par
+```cpp\par
+#include <iostream>\par
+\par
+class MyClass \{\par
+public:\par
+    // Constructor\par
+    MyClass(int value) : myData(value) \{\}\par
+\par
+    // Member function\par
+    void display() \{\par
+        std::cout << "MyData: " << myData << std::endl;\par
+    \}\par
+\par
+private:\par
+    int myData;\par
+\};\par
+\par
+int main() \{\par
+    // Create an object of the class\par
+    MyClass myObject(42);\par
+\par
+    // Access and use member functions\par
+    myObject.display();\par
+\par
+    return 0;\par
+\}\par
+```\par
+\par
+**How to use `strcmp` function in C++?**\par
+`strcmp` is a C library function used for string comparison. In C++, you can use it with C-style strings. Here's an example:\par
+\par
+```cpp\par
+#include <iostream>\par
+#include <cstring>\par
+\par
+int main() \{\par
+    const char* str1 = "Hello";\par
+    const char* str2 = "World";\par
+\par
+    int result = std::strcmp(str1, str2);\par
+\par
+    if (result == 0) \{\par
+        std::cout << "Strings are equal." << std::endl;\par
+    \} else if (result < 0) \{\par
+        std::cout << "String 1 is less than String 2." << std::endl;\par
+    \} else \{\par
+        std::cout << "String 1 is greater than String 2." << std::endl;\par
+    \}\par
+\par
+    return 0;\par
+\}\par
+```\par
+\par
+**How to write to a file in C++?**\par
+```cpp\par
+#include <iostream>\par
+#include <fstream>\par
+\par
+int main() \{\par
+    std::ofstream outputFile("example.txt");\par
+\par
+    if (outputFile.is_open()) \{\par
+        outputFile << "Hello, File!" << std::endl;\par
+        outputFile.close();\par
+        std::cout << "Data written to file successfully." << std::endl;\par
+    \} else \{\par
+        std::cerr << "Unable to open the file." << std::endl;\par
+    \}\par
+\par
+    return 0;\par
+\}\par
+```\par
+\par
+**What is `stringstream` in C++?**\par
+`std::stringstream` is a class in C++ that provides an in-memory stream, allowing you to read from or write to strings as if they were streams (like `std::cin` and `std::cout`). It is part of the `<sstream>` header.\par
+\par
+Here's a simple example demonstrating its use:\par
+```cpp\par
+#include <iostream>\par
+#include <sstream>\par
+\par
+int main() \{\par
+    std::stringstream ss;\par
+\par
+    // Writing to stringstream\par
+    ss << "Hello, ";\par
+    ss << 42;\par
+    ss << " World!";\par
+\par
+    // Reading from stringstream\par
+    std::string result = ss.str();\par
+    std::cout << result << std::endl;\par
+\par
+    return 0;\par
+\}\par
+```\par
+}
+ 

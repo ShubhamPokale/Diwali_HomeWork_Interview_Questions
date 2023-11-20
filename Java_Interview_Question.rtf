@@ -1,0 +1,799 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9\par
+Question answers on Java, Oops concepts and Garbage Collector \par
+\par
+1. **Q: What are the core OOPs concepts in Java?**\par
+   - A: The core Object-Oriented Programming (OOP) concepts in Java are:\par
+     - Encapsulation\par
+     - Inheritance\par
+     - Polymorphism\par
+     - Abstraction\par
+\par
+2. **Q: What Is Object-Oriented Programming in Java?**\par
+   - A: Object-Oriented Programming (OOP) in Java is a programming paradigm that organizes code around objects, where objects represent real-world entities, and programming revolves around their interactions.\par
+\par
+3. **Q: What is the difference between procedural programming and object-oriented programming?**\par
+   - A: In procedural programming, code is organized around procedures or functions, whereas in object-oriented programming, code is organized around objects that encapsulate data and behavior.\par
+\par
+4. **Q: What is Object-Oriented Programming System (OOPs) in Java?**\par
+   - A: Object-Oriented Programming System (OOPs) in Java refers to the implementation of the OOP principles in the Java programming language, enabling the creation and manipulation of objects.\par
+\par
+5. **Q: Name some programming languages that implement OOPs features.**\par
+   - A: Some programming languages that implement OOP features include Java, C++, Python, Ruby, and C#.\par
+\par
+6. **Q: What is the basic difference between Object Oriented Programming language and Object Based Programming language?**\par
+   - A: Object-Oriented Programming languages support all four OOP principles (Encapsulation, Inheritance, Polymorphism, Abstraction), while Object-Based Programming languages may lack some features, typically not supporting Inheritance.\par
+\par
+7. **Q: What are some important features of OOPs concept in Java?**\par
+   - A: Important features of OOPs in Java include:\par
+     - Encapsulation: Bundling data and methods that operate on the data into a single unit (object).\par
+     - Inheritance: A mechanism for creating a new class using properties and behaviors of an existing class.\par
+     - Polymorphism: The ability of an object to take on multiple forms, often achieved through method overloading and overriding.\par
+     - Abstraction: Simplifying complex systems by modeling classes based on their essential features.\par
+\par
+8. **Q: What are the advantages/benefits of OOPs in Java?**\par
+   - A: The advantages of OOPs in Java include code reusability, modularity, easier maintenance, flexibility, and better organization of code.\par
+\par
+9. **Q: What are applications of OOPs concepts in Java?**\par
+   - A: OOPs concepts find applications in various domains, including software development, game development, simulation software, graphical user interface development, and more.\par
+\par
+10. **Q: What are the key points for developing a clean Object-Oriented program?**\par
+    - A: Key points for developing a clean Object-Oriented program include following principles like SOLID (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion), maintaining proper encapsulation, and designing classes with a clear hierarchy.\par
+\par
+11. **Q: What is Encapsulation in Java?**\par
+    - A: Encapsulation in Java is the bundling of data (attributes) and methods that operate on the data into a single unit (class). It restricts direct access to some of an object's components, promoting data hiding and security.\par
+\par
+12. **Q: What is Data hiding?**\par
+    - A: Data hiding is a concept related to encapsulation, where the internal details of an object are hidden from the outside world. It helps in protecting the integrity of the object's data.\par
+\par
+13. **Q: How to implement Encapsulation in Java?**\par
+    - A: Encapsulation in Java is implemented by declaring the variables of a class as private and providing public getter and setter methods to access and modify the data.\par
+\par
+14. **Q: How to achieve data hiding programmatically?**\par
+    - A: Data hiding is achieved programmatically in Java by declaring the attributes of a class as private and providing public methods (getters and setters) to access and modify the data.\par
+\par
+15. **Q: In the following code, radius is declared as private in class Test, and t is an object of the class Test. Does the code cause any problems? If so, explain why?**\par
+    ```java\par
+    public final class Test \{\par
+       private double radius = 1;\par
+    \par
+       public double getArea() \{\par
+          return radius * radius * Math.PI;\par
+       \}\par
+    \par
+       public static void main(String[] args) \{\par
+          Test t = new Test();\par
+          System.out.println("Radius of circle:  " + t.radius);\par
+          System.out.println("Area of circle: " + t.getArea());\par
+       \}\par
+    \}\par
+    ```\par
+    - A: Yes, the code causes a compilation error. The variable `radius` is declared as private, making it inaccessible outside the class, including in the `main` method. The correct way to access `radius` is through the `getArea` method.\par
+\par
+16. **Q: What is meant by tightly encapsulated class in Java?**\par
+    - A: A tightly encapsulated class in Java is a class where the data (attributes) is well-protected, and access to it is restricted to methods within the same class. It ensures that the internal details of the class are hidden and cannot be easily tampered with from outside.\par
+\par
+17. **Q: Which of the following classes are tightly encapsulated?**\par
+    ```java\par
+    class A \{\par
+        private int x = 20;\par
+    \}\par
+    class B extends A \{\par
+       int y = 50;\par
+    \}\par
+    class C extends A \{\par
+      private int z = 10;\par
+    \}\par
+    ```\par
+    - A: Classes A and C are tightly encapsulated since they have private attributes and access is restricted to their own methods.\par
+\par
+18. **Q: Are all classes P, Q, R tightly encapsulated in the following code? If yes how?**\par
+    ```java\par
+    class P \{\par
+       int a = 10;\par
+    \}\par
+    class Q extends P \{\par
+      private int b = 20;\par
+    \}\par
+    class R extends Q \{\par
+      private int z = 30;\par
+    \}\par
+    ```\par
+    - A: No, only class P is tightly encapsulated because it doesn't have any private attributes. Classes Q and R have private attributes, but they are still accessible to subclasses, which breaks the encapsulation.\par
+\par
+19. **Q: What are the accessor method and mutator method?**\par
+    - A: Accessor methods (getters) are methods that provide access to the private attributes of a class. Mutator methods (setters) are methods that modify the values of the private attributes.\par
+\par
+20. **Q: In the following source code, does the code cause any problem? If yes, why?**\par
+    ```java\par
+    public class Student \{\par
+       private String name;\par
+       public String getName() \{\par
+          return name;\par
+       \}\par
+       public void setName(String studentName) \{\par
+          name = studentName;\par
+       \}\par
+    \}\par
+    class EncapsulatedTest \{\par
+       public static void main(String[] arg) \{\par
+          Student obj = new Student();\par
+          obj.name = "John";\par
+       \}\par
+    \}\par
+    ```\par
+    - A: Yes, the code causes a compilation error. The `name` attribute in the `Student` class is declared as private, making it inaccessible outside\par
+\par
+21: What would happen if we do not use encapsulation in a Java program?\par
+\par
+A: Without encapsulation, data would be exposed, leading to potential security issues and difficulties in maintaining and modifying the code. Encapsulation ensures that the internal details of a class are hidden, promoting data integrity and secure code.\par
+Q: What is Inheritance in Java?\par
+\par
+22. A: Inheritance in Java is a mechanism that allows a new class (subclass or derived class) to inherit the properties and behaviors of an existing class (superclass or base class). It promotes code reusability and establishes an "is-a" relationship between classes.\par
+23.Q: Why do we need to use inheritance?\par
+\par
+A: Inheritance is used for code reuse, promoting the creation of a new class with the attributes and methods of an existing class. It allows the new class to inherit and extend the functionalities of the existing class, reducing redundancy and improving maintainability.\par
+24.Q: What is Is-A relationship in Java?\par
+\par
+A: The Is-A relationship in Java represents the relationship between a subclass and its superclass. It signifies that an object of the subclass is also an object of the superclass. For example, if class B inherits from class A, we say "B is a type of A."\par
+25.Q: What are super class and sub class?\par
+\par
+A: The superclass is the existing class from which properties and behaviors are inherited, and the subclass is the new class that inherits from the superclass, acquiring its attributes and methods.\par
+26.Q: How is Inheritance implemented/achieved in Java?\par
+\par
+A: Inheritance in Java is achieved using the extends keyword. A subclass extends a superclass to inherit its properties. For example: class Subclass extends Superclass \{ \}\par
+27.Q: Can a derived class be referenced for a base class object?\par
+\par
+A: Yes, a derived class (subclass) can be referenced using a base class (superclass) reference. This is known as upcasting.\par
+28.Q: Can a parent class be referenced for a child class object?\par
+\par
+A: No, a parent class (superclass) cannot be directly referenced for a child class (subclass) object. However, it can be achieved through casting (downcasting).\par
+29.Q: What is the use of the super keyword in Java?\par
+\par
+A: The super keyword in Java is used to refer to the superclass members (attributes or methods) from within the subclass. It is often used to differentiate between the superclass and subclass members with the same name.\par
+30.Q: Why do we use the this keyword in Java?\par
+\par
+A: The this keyword in Java is used to refer to the current object within a method or constructor. It is often used to disambiguate instance variables from local variables when they have the same name.\par
+31.Q: Is it possible to use this() and super() both in the same constructor?\par
+\par
+A: No, it is not possible to use both this() and super() in the same constructor. They both refer to the constructor, and only one of them can be used as the first statement in a constructor.\par
+32.Q: What is the difference between super and this keywords?\par
+\par
+A: The super keyword is used to refer to the superclass members, while the this keyword is used to refer to the current object's members. Both help in resolving conflicts between instance variables with the same name.\par
+33.Q: What is Method overloading in Java?\par
+\par
+A: Method overloading in Java is a feature that allows a class to have multiple methods with the same name but different parameters (either different types or a different number of parameters).\par
+34.Q: How does the Java compiler differentiate overloaded methods?\par
+\par
+A: The Java compiler differentiates overloaded methods based on the number or types of parameters. The method signature includes the method name and parameter types.\par
+35.Q: What is another name for method overloading?\par
+\par
+A: Another name for method overloading is "Compile-time Polymorphism" or "Static Polymorphism."\par
+36.Q: How is method overloading implemented in Java?\par
+\par
+A: Method overloading is implemented by defining multiple methods with the same name in the same class, but with different parameter lists.\par
+37.Q: What are the rules of method overloading to implement in Java?\par
+\par
+A: Rules for method overloading include having different parameter types, a different number of parameters, or both.\par
+38.Q: When to use method overloading in Java?\par
+\par
+A: Method overloading is used when there is a need for multiple methods with the same functionality but different parameter variations.\par
+39.Q: Why is it not possible to implement method overloading by changing the return type of the method in Java?\par
+\par
+A: Changing only the return type does not provide sufficient distinction for method overloading. Overloaded methods must have a unique combination of parameter types or a different number of parameters.\par
+40.Q: Is it possible to overload the main() method in Java?\par
+\par
+A: Yes, it is possible to overload the main() method in Java by defining multiple methods with the name main(), but they should have different parameter lists. However, the JVM always calls the standard public static void main(String[] args) method.\par
+41. **Q: Why does Java not support operator overloading?**\par
+   - A: Java does not support operator overloading to keep the language simple, avoid ambiguity, and maintain code readability. Allowing operator overloading can lead to confusion and make code harder to understand.\par
+\par
+42. **Q: Can private and final methods be overloaded?**\par
+   - A: Yes, both private and final methods in Java can be overloaded. Overloading is based on the method signature, which includes the method name and parameter types, not the access modifiers or the use of the final keyword.\par
+\par
+43. **Q: What is the error in the following code?**\par
+   ```java\par
+   public class Test \{\par
+      public static void m1(int x) \{\par
+      \}\par
+\par
+      public static int m1(int y) \{\par
+         return y;\par
+      \}\par
+\par
+      public static void main(String[] answer) \{\par
+      \}\par
+   \}\par
+   ```\par
+   - A: The code has a compilation error. Java does not allow two methods in the same class with the same name and parameter types, even if they have different return types.\par
+\par
+44. **Q: What will be the output of the following code?**\par
+   ```java\par
+   public class Test \{\par
+      private int m1(int x) \{\par
+         return 20;\par
+      \}\par
+\par
+      private String m1(String x) \{\par
+         return "abc";\par
+      \}\par
+\par
+      public static void main(String[] answer) \{\par
+         Test t = new Test();\par
+         System.out.println(t.m1(20));\par
+         System.out.println(t.m1(null));\par
+      \}\par
+   \}\par
+   ```\par
+   - A: The code will compile successfully. The output will be:\par
+      ```\par
+      20\par
+      abc\par
+      ```\par
+\par
+45. **Q: Will the code compile successfully? If yes, what will be the output of the code?**\par
+   ```java\par
+   public class A \{\par
+      void m1(Object o) \{\par
+         System.out.println("Hello");\par
+      \}\par
+\par
+      void m1(Object o, String s) \{\par
+         System.out.println("Java");\par
+      \}\par
+\par
+      public static void main(String[] args) \{\par
+         A a = new A();\par
+         a.m1(new Object());\par
+         a.m1(new Object(), new String());\par
+      \}\par
+   \}\par
+   ```\par
+   - A: Yes, the code will compile successfully. The output will be:\par
+      ```\par
+      Hello\par
+      Java\par
+      ```\par
+\par
+46. **Q: What will be the output of the following program after execution?**\par
+   ```java\par
+   public class A \{\par
+      void m1(Integer i) \{\par
+         System.out.println("Hello");\par
+      \}\par
+\par
+      void m1(Object o) \{\par
+         System.out.println("Java");\par
+      \}\par
+\par
+      public static void main(String[] args) \{\par
+         A a = new A();\par
+         a.m1(null);\par
+      \}\par
+   \}\par
+   ```\par
+   - A: The output will be:\par
+      ```\par
+      Hello\par
+      ```\par
+\par
+47. **Q: Will the following code compile successfully? If yes, what will be the output after execution?**\par
+   ```java\par
+   public class A \{\par
+      void m1(Integer i) \{\par
+         System.out.println("Hello");\par
+      \}\par
+\par
+      void m1(String s) \{\par
+         System.out.println("Java");\par
+      \}\par
+\par
+      public static void main(String[] args) \{\par
+         A a = new A();\par
+         a.m1(null);\par
+      \}\par
+   \}\par
+   ```\par
+   - A: Yes, the code will compile successfully. The output will be:\par
+      ```\par
+      Hello\par
+      ```\par
+\par
+48. **Q: Will the program compile successfully? If yes, what will be the output after execution?**\par
+   ```java\par
+   public class A \{\par
+      void m1(Integer i) \{\par
+         System.out.println("Hello");\par
+      \}\par
+\par
+      void m1(Double d) \{\par
+         System.out.println("Java");\par
+      \}\par
+\par
+      public static void main(String[] args) \{\par
+         A a = new A();\par
+         a.m1((Integer) new Object());\par
+      \}\par
+   \}\par
+   ```\par
+   - A: The program will compile successfully. The output will be:\par
+      ```\par
+      Hello\par
+      ```\par
+\par
+49. **Q: Show the output of the following program.**\par
+   ```java\par
+   public class A \{\par
+      void m1(int i) \{\par
+         System.out.println("Hello");\par
+      \}\par
+\par
+      void m1(Double d) \{\par
+         System.out.println("Java");\par
+      \}\par
+\par
+      public static void main(String[] args) \{\par
+         A a = new A();\par
+         a.m1(new Integer(25));\par
+      \}\par
+   \}\par
+   ```\par
+   - A: The output will be:\par
+      ```\par
+      Hello\par
+      ```\par
+\par
+50. **Q: What is Type conversion in Java?**\par
+    - A: Type conversion in Java is the process of converting a value from one data type to another, either implicitly or explicitly.\par
+\par
+51. **Q: What is Implicit type casting in Java?**\par
+    - A: Implicit type casting in Java is the automatic conversion of a smaller data type to a larger data type without the need for explicit user intervention.\par
+\par
+52. **Q: When does automatic type conversion take place in Java?**\par
+    - A: Automatic type conversion in Java takes place when a value of a smaller data type is assigned to a variable of a larger data type, and it happens automatically without the need for explicit casting.\par
+\par
+53. **Q: What is widening in Java?**\par
+    - A: Widening in Java refers to the automatic conversion of a value from a smaller data type to a larger data type. It is also known as upcasting.\par
+\par
+54. **Q: Is it possible for widening conversion from numeric type to char or boolean?**\par
+    - A: No, widening conversion does not occur from numeric types to char or boolean. It is applicable for numeric types to larger numeric types and for derived classes to their base classes.\par
+\par
+55. **Q: Identify the error in the following code.**\par
+    ```java\par
+    public class A \{\par
+       public static void main(String[] args) \{ \par
+          int a = 50; \par
+          long l = a; \par
+          int i = l; \par
+          System.out.println(+l); \par
+       \}\par
+    \}\par
+    ```\par
+    - A: The code will compile successfully, but there is an unnecessary `+` before `l` in the `System.out.println(+l);`. It doesn't affect the result but is stylistically unconventional.\par
+\par
+56. **Q: What is narrowing conversion in Java?**\par
+    - A: Narrowing conversion in Java is the explicit or manual conversion of a value from a larger data type to a smaller data type. It may result in loss of information.\par
+\par
+57. **Q: What is the difference between implicit casting and explicit casting?**\par
+    - A: Implicit casting (widening) is an automatic conversion of a smaller data type to a larger data type, while explicit casting (narrowing) requires manual intervention and is done from a larger data type to a smaller data type.\par
+\par
+58. **Q: What is Upcasting in Java?**\par
+    - A: Upcasting in Java is the implicit casting of a subclass object to a superclass reference. It happens automatically and is a form of widening conversion.\par
+\par
+59. **Q: What is the output of the following program if no error?**\par
+    ```java\par
+    public class One \{ \par
+       void m1() \{ \par
+           System.out.println("m1 method in class One"); \par
+       \} \par
+    \} \par
+    public class Two extends One \{ \par
+       void m1()\{ \par
+           System.out.println("m1 method in class Two"); \par
+       \} \par
+    \} \par
+    public class Test \{ \par
+       public static void main(String[] args) \{ \par
+          One o = (One)new Two();\par
+          o.m1(); \par
+       \} \par
+    \}\par
+    ```\par
+    - A: The output will be:\par
+      ```\par
+      m1 method in class Two\par
+      ```\par
+\par
+60. **Q: What is Downcasting in Java?**\par
+    - A: Downcasting in Java is the explicit casting of a superclass reference to a subclass reference. It involves a manual conversion and may require checking the actual type of the object to avoid runtime errors.\par
+\par
+61. **Q: What is the output of the following code?**\par
+    ```java\par
+    public class One \{ \par
+       void m1()\{ \par
+          System.out.println("m1 method in class One"); \par
+       \} \par
+    \} \par
+    public class Two extends One \{ \par
+       void m2() \{ \par
+          System.out.println("m2 method in class Two"); \par
+       \} \par
+    \} \par
+    public class Test \{ \par
+       public static void main(String[] args) \{ \par
+          Two t = (Two) new One(); \par
+          t.m1(); \par
+          t.m2(); \par
+       \} \par
+    \}\par
+    ```\par
+    - A: The code will compile successfully, but at runtime, it will throw a `ClassCastException` because you are trying to cast a `One` object to a `Two` reference, which is not allowed.\par
+\par
+62. **Q: Will the code compile successfully? If yes, what is the output of the application?**\par
+    ```java\par
+    public class One \{ \par
+       void m1() \{ \par
+          System.out.println("m1 method in class One"); \par
+       \} \par
+    \} \par
+    public class Two extends One \{ \par
+       void m2() \{ \par
+          System.out.println("m2 method in class Two"); \par
+       \} \par
+    \} \par
+    public class Test \{ \par
+       public static void main(String[] args) \{ \par
+          One o = new Two();  \par
+          Two t = (Two)o;  \par
+          t.m1();  \par
+          t.m2(); \par
+       \} \par
+    \}\par
+    ```\par
+    - A: The code will compile successfully, and the output will be:\par
+      ```\par
+      m1 method in class One\par
+      m2 method in class Two\par
+      ```\par
+\par
+63. **Q: What is Method overriding in Java?**\par
+    - A: Method overriding in Java is a feature that allows a subclass to provide a specific implementation for a method that is already defined in its superclass. It provides a way for a subclass to provide a specialized version of a method that is already defined in its superclass.\par
+\par
+64. **Q: What are Overridden and Overriding methods in Java?**\par
+    - A: \par
+      - **Overridden Method:** The method in the superclass that is redefined in the subclass with a specific implementation.\par
+      - **Overriding Method:** The method in the subclass that provides a specific implementation for the method declared in the superclass.\par
+\par
+65. **Q: Why do we need to create Subclass in Java?**\par
+    - A: Creating a subclass in Java allows for code reusability, extensibility, and the implementation of specific functionalities. Subclasses inherit attributes and behaviors from their superclass and can provide specialized implementations.\par
+\par
+66. **Q: What is the use of method overriding in Java?**\par
+    - A: Method overriding allows a subclass to provide a specific implementation for a method defined in its superclass. It facilitates polymorphism and enables the invocation of the appropriate method based on the actual type of the object at runtime.\par
+\par
+67. **Q: How to implement method overriding in Java?**\par
+    - A: To implement method overriding in Java, follow these steps:\par
+      - Create a subclass that extends the superclass.\par
+      - Define a method in the subclass with the same signature as the method in the superclass.\par
+      - Provide a specific implementation for the method in the subclass.\par
+\par
+68. **Q: What are the important rules of method overriding in Java?**\par
+    - A: \par
+      1. The method in the subclass must have the same method signature as the method in the superclass.\par
+      2. The return type of the overriding method can be the same as or a subtype of the return type of the overridden method.\par
+      3. The access level of the overriding method cannot be more restrictive than the access level of the overridden method.\par
+      4. The overriding method cannot throw a broader exception than the exception thrown by the overridden method.\par
+\par
+69. **Q: Can we reduce the visibility of the overriding method in subclass?**\par
+    - A: No, the visibility of the overriding method in the subclass cannot be reduced. It must be at least as accessible as the overridden method in the superclass.\par
+\par
+70. **Q: Will the code compile successfully? If yes, what is the output after execution?**\par
+    ```java\par
+    public class X \{ \par
+       public void m1()\{ \par
+          System.out.println("m1-X"); \par
+       \} \par
+    \} \par
+    public class Y extends X \{ \par
+       void m1()\{ \par
+          System.out.println("m1-Y"); \par
+       \} \par
+    \} \par
+    public class XY \{ \par
+       public static void main(String[] args) \{ \par
+          Y y = new Y(); \par
+          y.m1(); \par
+       \} \par
+    \}\par
+    ```\par
+    - A: The code will compile successfully, and the output will be:\par
+      ```\par
+      m1-Y\par
+      ```\par
+\par
+71. **Q: Why cannot a private method be overridden?**\par
+    - A: Private methods in Java are not inherited by subclasses; hence, there is no concept of overriding for private methods. Overriding is based on inheritance, and private methods are not accessible in subclasses.\par
+\par
+72. **Q: Can we override a static method in Java?**\par
+    - A: No, static methods in Java cannot be overridden. They are associated with the class itself and not with instances of the class.\par
+\par
+73. **Q: Can we stop method overriding in Java?**\par
+    - A: Yes, by using the final keyword, you can prevent a method from being overridden in Java. Marking a method as final in the superclass will disallow any subclass from providing a different implementation.\par
+\par
+74. **Q: What is Covariant return type in Java?**\par
+    - A: Covariant return type in Java refers to the ability of a subclass to override a method in the superclass with a return type that is a subtype of the return type in the superclass.\par
+\par
+75. **Q: What are the rules of covariant return type in Java?**\par
+    - A: \par
+      1. The return type of the overriding method in the subclass must be a subtype of the return type of the overridden method in the superclass.\par
+      2. The overriding method can return a more specific type.\par
+\par
+76. **Q: What will be the output of the following code?**\par
+    ```java\par
+    public class X \{ \par
+       public Object m1(char c) \{ \par
+          System.out.println("m1-X"); \par
+          return new X(); \par
+       \} \par
+    \} \par
+    public class Y extends X \{  \par
+       public StringBuffer m1(char c) \{ \par
+          System.out.println("m1-Y"); \par
+          return null; \par
+       \} \par
+    \} \par
+    public class XY \{ \par
+       public static void main(String[] args) \{ \par
+          X x = new Y(); \par
+          x.m1('a'); \par
+\par
+          X x1 = new X(); \par
+          x1.m1('b'); \par
+       \} \par
+    \}\par
+    ```\par
+    - A: The output will be:\par
+      ```\par
+      m1-Y\par
+      m1-X\par
+      ```\par
+77. **Q: Identify the error in the following code?**\par
+    ```java\par
+    public class Parent \{ \par
+       void msg()\{ \par
+          System.out.println("msg-Parent"); \par
+       \} \par
+    \} \par
+    import java.io.IOException; \par
+    public class Child extends Parent \{ \par
+       void msg() throws IOException \{ \par
+          System.out.println("msg-Child"); \par
+       \} \par
+       public static void main(String[] args) throws IOException \{ \par
+          Parent p = new Child(); \par
+          p.msg(); \par
+          \par
+          Child c = new Child(); \par
+          c.msg(); \par
+       \} \par
+    \}\par
+    ```\par
+    - A: There is no error in the code. The code will compile successfully. It demonstrates polymorphism where a Parent reference is used to refer to a Child object, and the overridden method in the Child class is invoked.\par
+\par
+78. **Q: Is there any error in the following code? If not, what will be the output of the program?**\par
+    ```java\par
+    public class Parent \{ \par
+       void msg() \{  \par
+          System.out.println("msg-Parent"); \par
+       \} \par
+    \} \par
+    import java.io.IOException; \par
+    public class Child extends Parent \{ \par
+       void msg() throws ArithmeticException \{ \par
+          System.out.println("msg-Child"); \par
+       \} \par
+       public static void main(String[] args) throws IOException \{ \par
+          Parent p = new Child(); \par
+          p.msg(); \par
+          \par
+          Child c = new Child(); \par
+          c.msg(); \par
+       \} \par
+    \}\par
+    ```\par
+    - A: There is no error in the code. The output of the program will be:\par
+      ```\par
+      msg-Child\par
+      msg-Child\par
+      ```\par
+\par
+79. **Q: Identify the errors in the following code.**\par
+    - A:\par
+      a) In superclass\par
+         ```java\par
+         public void m1() throws IOException \{\par
+            System.out.println("Hello");\par
+         \}\par
+         ```\par
+         In subclass\par
+         ```java\par
+         public void m1() throws Exception \{\par
+            System.out.println("Hi");\par
+         \}\par
+         ```\par
+      b) In superclass \par
+         ```java\par
+         public void m1() throws Throwable \{ \~ \par
+            System.out.println("Parent"); \par
+         \} \par
+         ```\par
+         In subclass \par
+         ```java\par
+         public void m1() throws Exception \{ \~ \par
+            System.out.println("Child"); \par
+         \}\par
+         ```\par
+      c) In base class\par
+         ```java\par
+         public void m1() throws Exception \{\par
+            System.out.println("Base");\par
+         \}\par
+         ```\par
+         In derived class\par
+         ```java\par
+         void m1() throws InterruptedException \{\par
+            System.out.println("Child");\par
+         \}\par
+         ```\par
+      d) In superclass\par
+         ```java\par
+         protected void m1(char c) throws Throwable \{\par
+            System.out.println("Parent");\par
+         \}\par
+         ```\par
+         In subclass\par
+         ```java\par
+         void m1(char c) \{\par
+            System.out.println("Child");\par
+         \}\par
+         ```\par
+\par
+80. **Q: What is the difference between method overloading and method overriding in Java?**\par
+    - A:\par
+      - **Method Overloading:**\par
+        - Occurs within the same class.\par
+        - Involves multiple methods with the same name but different parameters (different number, type, or order).\par
+        - Return types may or may not be different.\par
+        - Decision is made at compile-time (compile-time polymorphism or static polymorphism).\par
+\par
+      - **Method Overriding:**\par
+        - Occurs in a subclass and involves a method with the same signature as a method in its superclass.\par
+        - Involves providing a specific implementation in the subclass.\par
+        - Return types must be the same or covariant.\par
+        - Decision is made at runtime (runtime polymorphism or dynamic polymorphism).\par
+\par
+81. **Q: What is Method hiding in Java?**\par
+    - A: Method hiding in Java occurs when a subclass provides a static method with the same signature as a static method in its superclass. It is a form of compile-time polymorphism, and the decision on which method to call is made at compile-time.\par
+\par
+82. **Q: What is the output of the following code?**\par
+    ```java\par
+    public class X \{ \par
+       protected static void m1(int a) \{ \par
+          System.out.println("m1-X"); \par
+       \} \par
+    \} \par
+    public class Y extends X \{ \par
+       static void m1(int y) \{ \par
+          System.out.println("m1-Y"); \par
+       \} \par
+    \} \par
+    public class MyTest \{ \par
+       public static void main(String[] args) \{ \par
+          X x = new Y(); \par
+          x.m1(10); \par
+          \par
+          Y y = new Y(); \par
+          y.m1(20); \par
+       \} \par
+    \}\par
+    ```\par
+    - A: The output will be:\par
+      ```\par
+      m1-X\par
+      m1-Y\par
+      ```\par
+\par
+83. **Q: What is the difference between method hiding and method overriding?**\par
+    - A:\par
+      - **Method Hiding:**\par
+        - Occurs when a subclass provides a static method with the same signature as a static method in its superclass.\par
+        - Decision is made at compile-time.\par
+        - Involves the use of the `static` keyword.\par
+\par
+      - **Method Overriding:**\par
+        - Occurs when a subclass provides a specific implementation for a method with the same signature as a method in its superclass.\par
+        - Decision is made at runtime.\par
+        - Involves providing a dynamic implementation.\par
+\par
+84. **Q: What is dynamic method dispatch in Java?**\par
+    - A: Dynamic method dispatch in Java refers to the process where the appropriate method to be called is determined at runtime. It is associated with method overriding and polymorphism.\par
+\par
+85. **Q: Why is dynamic method dispatch important in Java?**\par
+    - A: Dynamic method dispatch is important in Java because it enables polymorphism, allowing a subclass object to be treated as an object of its superclass and ensuring that the overridden method in the subclass is invoked at runtime based on the actual type of the object.\par
+\par
+_____________Questions on Garbage Collection _________________\par
+1. **Q: What is the structure of Java Heap? What is Perm Gen space in Heap?**\par
+   - A: The Java Heap consists of the Young Generation, Old Generation (Tenured), and Permanent Generation (Perm Gen), with Perm Gen used for storing metadata related to classes and methods.\par
+\par
+2. **Q: How do you identify minor and major garbage collections in Java?**\par
+   - A: Minor collections involve the Young Generation, and major collections involve the Old Generation.\par
+\par
+3. **Q: What is the difference between ParNew and DefNew Young Generation Garbage collector?**\par
+   - A: ParNew is an enhanced version of DefNew, offering better parallelism for multi-threaded applications.\par
+\par
+4. **Q: How do you find GC resulted due to calling System.gc()?**\par
+   - A: The JVM may choose to ignore the `System.gc()` request; thus, it's not guaranteed to trigger garbage collection.\par
+\par
+5. **Q: What is the difference between Serial and Throughput Garbage collectors?**\par
+   - A: Serial is a single-threaded collector suitable for small applications, while Throughput (Parallel) is designed for multi-threaded systems, optimizing for throughput.\par
+\par
+6. **Q: When does an Object become eligible for Garbage collection in Java?**\par
+   - A: An object becomes eligible for garbage collection when there are no live references to it.\par
+\par
+7. **Q: What is finalize() Method in Java? When does Garbage collector calls finalize method in Java?**\par
+   - A: `finalize()` is a method in the `Object` class that gets called by the garbage collector before an object is reclaimed. Its usage is discouraged due to uncertainty in execution.\par
+\par
+8. **Q: If Object A has reference to Object B and Object B refer to Object A, apart from that there is no live reference to either object A or B, Does they are eligible for Garbage collection?**\par
+   - A: Objects with circular references may still be eligible for garbage collection if there are no external references to the group of objects.\par
+\par
+9. **Q: Can we force the Garbage collector to run at any time?**\par
+   - A: While it's possible to suggest garbage collection using `System.gc()`, it doesn't guarantee immediate execution.\par
+\par
+10. **Q: Does Garbage collection occur in permanent generation space in JVM?**\par
+    - A: No, the Permanent Generation is not part of the garbage collection process in modern Java versions. It's replaced by the Metaspace.\par
+\par
+11. **Q: How to monitor garbage collection activities?**\par
+    - A: Tools like Java VisualVM, JConsole, or using JVM options like `-XX:+PrintGCDetails` help monitor garbage collection activities.\par
+\par
+12. **Q: What Does the Statement \ldblquote Memory Is Managed in Java\rdblquote  Mean?**\par
+    - A: Java manages memory automatically, including allocation and deallocation of memory for objects.\par
+\par
+13. **Q: What Is Garbage Collection and What Are Its Advantages?**\par
+    - A: Garbage collection is the automatic process of deallocating memory occupied by objects that are no longer reachable. Advantages include automatic memory management and reduced risk of memory leaks.\par
+\par
+14. **Q: Are There Any Disadvantages of Garbage Collection?**\par
+    - A: Potential disadvantages include potential performance overhead and less control over memory management.\par
+\par
+15. **Q: What Is the Meaning of the Term \ldblquote Stop-The-World\rdblquote ?**\par
+    - A: "Stop-The-World" refers to a phase during garbage collection when all application threads are paused, and only the garbage collector runs.\par
+\par
+16. **Q: What Are Stack and Heap? What Is Stored in Each of These Memory Structures, and How Are They Interrelated?**\par
+    - A: The stack stores method calls and local variables, while the heap stores objects and their associated data.\par
+\par
+17. **Q: What Is Generational Garbage Collection and What Makes It a Popular Garbage Collection Approach?**\par
+    - A: Generational garbage collection divides the heap into Young and Old generations, exploiting the observation that most objects have short lifetimes.\par
+\par
+18. **Q: Describe in Detail How Generational Garbage Collection Works**\par
+    - A: Young Generation collects short-lived objects, and surviving objects are promoted to the Old Generation.\par
+\par
+19. **Q: When Does an Object Become Eligible for Garbage Collection? Describe How the GC Collects an Eligible Object?**\par
+    - A: An object becomes eligible when there are no more references to it. The garbage collector collects eligible objects during its execution.\par
+\par
+20. **Q: How Do You Trigger Garbage Collection from Java Code?**\par
+    - A: Garbage collection can be triggered using `System.gc()`, but it's not guaranteed to run immediately.\par
+\par
+21. **Q: What Happens When There Is Not Enough Heap Space to Accommodate Storage of New Objects?**\par
+    - A: When there's not enough heap space for new objects, an `OutOfMemoryError` is thrown.\par
+\par
+22. **Q: Is It Possible to \'abResurrect\'bb an Object That Became Eligible for Garbage Collection?**\par
+    - A: No, an object that has become eligible for garbage collection cannot be resurrected.\par
+\par
+23. **Q: Describe Strong, Weak, Soft and Phantom References and Their Role in Garbage Collection.**\par
+    - A: These are different types of references in Java, providing varying levels of control over garbage collection behavior.\par
+\par
+24. **Q: Suppose We Have a Circular Reference (Two Objects That Reference Each Other). Could Such Pair of Objects Become Eligible for Garbage Collection and Why?**\par
+    - A: Yes, circularly referenced objects can be eligible for garbage collection if there are no external references to the group.\par
+\par
+25. **Q: How Are Strings Represented in Memory?**\par
+    - A: Strings in Java are stored in the String Pool, and literals are stored in a special area of the heap.\par
+}
+ 
